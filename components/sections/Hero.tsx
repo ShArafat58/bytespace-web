@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { CategoryHighlightCard } from "@/components/sections/hero/CategoryHighlightCard";
-import { HappyStudentsCard } from "@/components/ui/HappyStudentsCard";
 import { HeroSearch } from "@/components/sections/hero/HeroSearch";
-import { LearningProgressCard } from "@/components/ui/LearningProgressCard";
+import { HeroVisual } from "@/components/sections/hero/HeroVisual";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
 
@@ -57,22 +55,17 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="relative h-256 overflow-hidden bg-primary-800 grid-lines"
+      className="relative overflow-hidden bg-primary-800 grid-lines xl:h-256"
     >
-      <div
-        aria-hidden="true"
-        className="absolute left-1/2 top-145.5 size-287.25 -translate-x-1/2 rounded-full border-320 border-secondary-500"
-      />
-
-      <Container className="relative flex flex-col items-center gap-15 pt-42.25">
-        <div className="flex flex-col items-center gap-8 text-center">
+      <Container className="relative flex flex-col items-center gap-10 pt-32 md:pt-36 xl:gap-15 xl:pt-42.25">
+        <div className="flex flex-col items-center gap-4 text-center md:gap-8">
           <h1
             id="hero-heading"
-            className="max-w-233.75 font-heading text-heading-l text-white"
+            className="max-w-233.75 font-heading text-heading-s text-white md:text-heading-m lg:text-heading-l"
           >
             Get Access to Hundreds Courses Available
           </h1>
-          <p className="max-w-204.75 text-body-l text-neutral-100">
+          <p className="max-w-204.75 text-body-m text-neutral-100 md:text-body-l">
             Unlock your creativity, gain valuable knowledge, and grow your
             business with our wide range of courses.
           </p>
@@ -80,18 +73,7 @@ export function Hero() {
         <HeroSearch />
       </Container>
 
-      <Image
-        src="/images/hero-student.png"
-        alt="Smiling student wearing headphones and holding a laptop"
-        width={722}
-        height={515}
-        loading="eager"
-        fetchPriority="high"
-        className="pointer-events-none absolute left-1/2 top-127.25 -ml-77.5 select-none"
-      />
-
-      <LearningProgressCard className="absolute left-1/2 top-162.75 ml-30.5" />
-      <HappyStudentsCard className="absolute left-1/2 top-209.25 -ml-98" />
+      <HeroVisual />
 
       {heroShapes.map((shape) => (
         <Image
@@ -102,13 +84,11 @@ export function Hero() {
           width={shape.width}
           height={shape.height}
           className={cn(
-            "pointer-events-none absolute select-none",
+            "pointer-events-none absolute hidden select-none xl:block",
             shape.className,
           )}
         />
       ))}
-
-      <CategoryHighlightCard className="absolute left-1/2 top-159.75 -ml-79" />
     </section>
   );
 }
