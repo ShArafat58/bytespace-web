@@ -5,6 +5,7 @@ import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { LearningPaths } from "@/components/sections/LearningPaths";
 import { PartnerLogos } from "@/components/sections/PartnerLogos";
+import { Testimonials } from "@/components/sections/Testimonials";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
         <LearningPaths />
         <CareerAndCreator />
         <CreatorCta />
+        <Testimonials />
       </main>
     </>
   );
