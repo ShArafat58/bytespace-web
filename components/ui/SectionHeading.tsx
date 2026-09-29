@@ -25,13 +25,15 @@ export function SectionHeading({
       <h2
         id={id}
         className={cn(
-          "font-heading text-heading-m text-vulcan-950",
+          "font-heading text-heading-s text-vulcan-950 md:text-heading-m",
           titleClassName,
         )}
       >
         {title}
       </h2>
-      <p className="text-body-l text-neutral-400">{description}</p>
+      <p className="text-body-m text-neutral-400 md:text-body-l">
+        {description}
+      </p>
     </div>
   );
 }

@@ -4,9 +4,9 @@ import { partners } from "@/lib/data/partners";
 
 export function PartnerLogos() {
   return (
-    <section aria-label="Our partners" className="bg-neutral-50 py-20">
+    <section aria-label="Our partners" className="bg-neutral-50 py-12 xl:py-20">
       <Container>
-        <ul className="flex items-end justify-center gap-18">
+        <ul className="flex flex-wrap items-end justify-center gap-x-8 gap-y-6 md:gap-x-12 xl:gap-x-18">
           {partners.map((partner) => (
             <li key={partner.src}>
               <Image
@@ -15,6 +15,7 @@ export function PartnerLogos() {
                 width={partner.width}
                 height={partner.height}
                 unoptimized
+                className="h-7 w-auto md:h-auto"
               />
             </li>
           ))}

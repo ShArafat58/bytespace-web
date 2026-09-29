@@ -6,7 +6,11 @@ import { courses } from "@/lib/data/courses";
 
 export function DiscoverCourses() {
   return (
-    <section id="courses" aria-labelledby="discover-heading" className="py-18">
+    <section
+      id="courses"
+      aria-labelledby="discover-heading"
+      className="py-12 md:py-16 xl:py-18"
+    >
       <Container className="flex flex-col items-center">
         <SectionHeading
           id="discover-heading"
@@ -14,8 +18,8 @@ export function DiscoverCourses() {
           description="At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life."
           titleClassName="max-w-147"
         />
-        <CategoryTags className="mt-10.5" />
-        <div className="mt-19.25 grid w-full grid-cols-3 gap-10">
+        <CategoryTags className="mt-8 xl:mt-10.5" />
+        <div className="mt-10 grid w-full grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 xl:mt-19.25 xl:grid-cols-3 xl:gap-10">
           {courses.map((course) => (
             <CourseCard key={course.id} course={course} />
           ))}

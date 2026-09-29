@@ -13,10 +13,13 @@ export function CategoryTags({ className }: { className?: string }) {
     <div
       role="group"
       aria-label="Course categories"
-      className={cn("flex flex-col items-center gap-5.25", className)}
+      className={cn("flex flex-col items-center gap-3 md:gap-5.25", className)}
     >
       {categoryTagRows.map((row, rowIndex) => (
-        <div key={row[0]} className="flex items-center gap-4">
+        <div
+          key={row[0]}
+          className="flex flex-wrap items-center justify-center gap-3 md:gap-4"
+        >
           {row.map((category) => (
             <Tag
               key={category}
