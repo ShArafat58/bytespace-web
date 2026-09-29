@@ -9,6 +9,11 @@
   --color-vulcan-950: #040819;
   --color-black-700: #4f4f4f;
   --color-black-950: #000000;
+  --color-black-200: #d1d1d1;
+  --color-black-400: #888888;
+
+  /* Error state color (not in the design, chosen for form validation) */
+  --color-danger-600: #dc2626;
   --color-neutral-50: #f5f5f6;
   --color-neutral-100: #e5e6e8;
   --color-neutral-200: #ced0d3;
