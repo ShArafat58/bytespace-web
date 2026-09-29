@@ -40,15 +40,15 @@ export function Testimonials() {
         />
       ))}
 
-      <Container className="relative flex flex-col gap-18 pb-14.25 pt-18.5">
-        <div className="flex items-end gap-10.75">
+      <Container className="relative flex flex-col gap-10 py-12 md:py-16 xl:gap-18 xl:pb-14.25 xl:pt-18.5">
+        <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:gap-10.75">
           <h2
             id="testimonials-heading"
-            className="w-144.25 shrink-0 font-heading text-heading-m text-black-950"
+            className="font-heading text-heading-s text-black-950 md:text-heading-m xl:w-144.25 xl:shrink-0"
           >
             Discover What Our Community Is Saying
           </h2>
-          <p className="text-body-l text-black-700">
+          <p className="text-body-m text-black-700 md:text-body-l">
             At ByteSpace, our vibrant community of learners and creators is at
             the heart of what we do. Hear directly from those who have
             experienced the transformative journey of learning and creating on
@@ -57,7 +57,7 @@ export function Testimonials() {
           </p>
         </div>
 
-        <ul className="grid grid-cols-3 items-start gap-10.25">
+        <ul className="grid grid-cols-1 items-start gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10.25">
           {testimonials.map((testimonial) => (
             <li key={testimonial.name}>
               <TestimonialCard testimonial={testimonial} />

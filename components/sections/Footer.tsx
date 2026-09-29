@@ -10,9 +10,9 @@ const linkStyles =
 export function Footer() {
   return (
     <footer className="border-t border-neutral-200 bg-white">
-      <Container className="flex flex-col gap-32.5 pb-12 pt-17.75">
-        <div className="flex items-start gap-23">
-          <div className="flex w-132 shrink-0 flex-col gap-11.25">
+      <Container className="flex flex-col gap-12 pb-8 pt-12 xl:gap-32.5 xl:pb-12 xl:pt-17.75">
+        <div className="flex flex-col gap-12 xl:flex-row xl:items-start xl:gap-23">
+          <div className="flex w-full flex-col gap-8 xl:w-132 xl:shrink-0 xl:gap-11.25">
             <div className="flex flex-col gap-4">
               <Link
                 href="/"
@@ -29,12 +29,15 @@ export function Footer() {
             <NewsletterForm />
           </div>
 
-          <nav aria-label="Footer" className="grid flex-1 grid-cols-3 gap-10">
+          <nav
+            aria-label="Footer"
+            className="grid flex-1 grid-cols-2 gap-8 sm:grid-cols-3 xl:gap-10"
+          >
             {footerLinkGroups.map((group) => (
               <ul
                 key={group.label}
                 aria-label={group.label}
-                className="flex flex-col gap-4 pt-12"
+                className="flex flex-col gap-4 xl:pt-12"
               >
                 {group.links.map((link) => (
                   <li key={link.label}>
@@ -51,11 +54,11 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="flex items-start justify-between border-t border-neutral-200 pt-6">
+        <div className="flex flex-col gap-4 border-t border-neutral-200 pt-6 md:flex-row md:items-start md:justify-between">
           <p className="text-body-xs text-neutral-950">
             © 2023 ByteSpace. All rights reserved.
           </p>
-          <ul className="flex gap-6">
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
             {legalLinks.map((link) => (
               <li key={link.label}>
                 <Link href={link.href} className={`${linkStyles} text-body-xs`}>

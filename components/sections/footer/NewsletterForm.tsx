@@ -15,7 +15,7 @@ export function NewsletterForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-      <div className="flex items-start gap-6">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-6">
         <label htmlFor="newsletter-email" className="sr-only">
           Email address
         </label>
@@ -27,9 +27,11 @@ export function NewsletterForm() {
           autoComplete="email"
           placeholder="Enter your email"
           onChange={() => setIsSubscribed(false)}
-          className="h-13 w-94 rounded-full border border-neutral-200 bg-white px-6 text-body-m text-neutral-950 placeholder:text-neutral-950 focus-ring"
+          className="h-13 w-full rounded-full border border-neutral-200 bg-white px-6 text-body-m text-neutral-950 placeholder:text-neutral-950 focus-ring sm:w-94"
         />
-        <Button type="submit">Search</Button>
+        <Button type="submit" className="w-full sm:w-auto">
+          Search
+        </Button>
       </div>
       <p className="max-w-126 text-body-xs text-neutral-950">
         By subscribing, you agree to our Privacy Policy and consent to receive

@@ -48,7 +48,7 @@ export function CareerAndCreator() {
           className={glow.className}
         />
       ))}
-      <Container className="relative flex flex-col gap-18 py-30">
+      <Container className="relative flex flex-col gap-16 py-16 xl:gap-18 xl:py-30">
         <GrowthRow />
         <CreatorRow />
       </Container>

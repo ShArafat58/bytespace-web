@@ -62,16 +62,16 @@ export function CreatorCta() {
     <section
       id="creators"
       aria-labelledby="creator-cta-heading"
-      className="relative flex h-122 items-center overflow-hidden bg-primary-800 grid-lines"
+      className="relative flex items-center overflow-hidden bg-primary-800 py-16 grid-lines md:py-20 xl:h-122 xl:py-0"
     >
-      <Container className="relative flex flex-col items-center gap-10 text-center">
+      <Container className="relative flex flex-col items-center gap-6 text-center md:gap-10">
         <h2
           id="creator-cta-heading"
-          className="max-w-177.5 font-heading text-heading-m text-neutral-50"
+          className="max-w-177.5 font-heading text-heading-s text-neutral-50 md:text-heading-m"
         >
           Unlock Your Potential as a Creator with ByteSpace
         </h2>
-        <p className="max-w-241 text-body-l text-neutral-50">
+        <p className="max-w-241 text-body-m text-neutral-50 md:text-body-l">
           Experience the collaboration of numerous creators and an expanding
           selection of courses. Register now and become a part of a community
           comprising over 10,000 local and international creators. Utilize our
@@ -92,7 +92,7 @@ export function CreatorCta() {
           width={shape.width}
           height={shape.height}
           className={cn(
-            "pointer-events-none absolute select-none",
+            "pointer-events-none absolute hidden select-none xl:block",
             shape.className,
           )}
         />
