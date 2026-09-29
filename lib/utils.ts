@@ -10,6 +10,7 @@ const textStyles = [
   "body-m",
   "body-s",
   "body-xs",
+  "label-xl",
   "label-l",
   "label-m",
   "label-s",
