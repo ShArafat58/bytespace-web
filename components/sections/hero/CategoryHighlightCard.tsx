@@ -10,7 +10,7 @@ export function CategoryHighlightCard({ className }: { className?: string }) {
       )}
     >
       <p className="text-label-m text-neutral-950">{heroHighlight.title}</p>
-      <p className="flex items-center gap-2 text-body-xs text-neutral-400">
+      <p className="flex items-center gap-2 text-body-xs text-neutral-500">
         <span>{heroHighlight.courses}</span>
         <span
           aria-hidden="true"

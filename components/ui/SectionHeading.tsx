@@ -31,7 +31,7 @@ export function SectionHeading({
       >
         {title}
       </h2>
-      <p className="text-body-m text-neutral-400 md:text-body-l">
+      <p className="text-body-m text-neutral-500 md:text-body-l">
         {description}
       </p>
     </div>

@@ -26,7 +26,7 @@ export function HappyStudentsCard({
         <p className="text-label-m text-neutral-950">Happy Students</p>
         <p className="flex items-center text-body-xs text-neutral-950">
           {heroHappyStudents.rating}&nbsp;
-          <span className={isAccent ? "text-neutral-700" : "text-neutral-400"}>
+          <span className={isAccent ? "text-neutral-700" : "text-neutral-500"}>
             {heroHappyStudents.reviews}
           </span>
           <StarIcon
