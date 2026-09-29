@@ -9,10 +9,10 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?logo=vercel&logoColor=white)](LIVE_URL_PLACEHOLDER)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?logo=vercel&logoColor=white)](https://bytespace-web-coral.vercel.app)
 [![Lighthouse Accessibility](https://img.shields.io/badge/Accessibility-100-0CCE6B?logo=lighthouse&logoColor=white)](#-lighthouse-results)
 
-[**Live Demo**](LIVE_URL_PLACEHOLDER) &nbsp;•&nbsp; [**Screenshots**](#-screenshots) &nbsp;•&nbsp; [**Getting Started**](#-getting-started)
+[**Live Demo**](https://bytespace-web-coral.vercel.app) &nbsp;•&nbsp; [**Screenshots**](#-screenshots) &nbsp;•&nbsp; [**Getting Started**](#-getting-started)
 
 <sub>Built for the Doin Tech Limited hiring assessment · Jr. Software Engineer (Frontend)</sub>
 
@@ -193,13 +193,14 @@ Where the design left something open, I made a decision and documented it:
 
 ## 🌿 Git Workflow
 
-| Branch                 | Contents                                             |
-| :--------------------- | :--------------------------------------------------- |
-| `main`                 | Initial project setup                                |
-| `feature/landing-page` | The landing page, one commit per section             |
-| `feature/auth-pages`   | Login and Signup pages, responsive work and QA fixes |
+| Branch                 | Contents                                                                                     |
+| :--------------------- | :------------------------------------------------------------------------------------------- |
+| `main`                 | Production branch, deployed automatically to Vercel                                          |
+| `feature/landing-page` | The landing page, one commit per section                                                     |
+| `feature/auth-pages`   | Built on top of `feature/landing-page`: Login and Signup pages, responsive work and QA fixes |
+| `docs/update-readme`   | Live demo link and documentation updates                                                     |
 
-Each branch is merged into `main` through a Pull Request, with small conventional commits (`feat:`, `fix:`, `perf:`, `docs:`).
+`feature/auth-pages` carries the full history of both feature branches and was merged into `main` through [Pull Request #1](https://github.com/ShArafat58/bytespace-web/pull/1). Documentation updates were merged through Pull Request #2. Commits are small and follow a conventional style (`feat:`, `fix:`, `perf:`, `docs:`).
 
 ## 👤 Author
 
