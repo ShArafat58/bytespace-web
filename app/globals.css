@@ -102,3 +102,30 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Keyboard focus outline for light backgrounds */
+@utility focus-ring {
+  outline: none;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary-800);
+    outline-offset: 4px;
+  }
+}
+
+/* Keyboard focus outline for primary (blue) backgrounds */
+@utility focus-ring-inverse {
+  outline: none;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-secondary-400);
+    outline-offset: 4px;
+  }
+}
