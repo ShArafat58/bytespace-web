@@ -20,6 +20,11 @@ export const satoshi = localFont({
       weight: "500",
       style: "normal",
     },
+    {
+      path: "../app/fonts/Satoshi-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
   ],
   variable: "--font-satoshi",
   display: "swap",

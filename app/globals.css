@@ -48,6 +48,7 @@
   --text-heading-l: 4.5rem;
   --text-heading-l--line-height: 1.2;
   --text-heading-l--font-weight: 600;
+  --text-heading-l--letter-spacing: -0.01em;
   --text-heading-m: 2.75rem;
   --text-heading-m--line-height: 1.2;
   --text-heading-m--font-weight: 600;
@@ -83,6 +84,12 @@
   --text-label-xs: 0.75rem;
   --text-label-xs--line-height: 1.2;
   --text-label-xs--font-weight: 500;
+
+  /* Large statistic number used in hero cards (not in the style guide) */
+  --text-stat: 3rem;
+  --text-stat--line-height: 1.2;
+  --text-stat--font-weight: 600;
+  --text-stat--letter-spacing: -0.01em;
 
   /* 1440 frame with 120px margins leaves a 1200px content area */
   --container-content: 75rem;
@@ -128,4 +135,21 @@
     outline: 2px solid var(--color-secondary-400);
     outline-offset: 4px;
   }
+}
+
+/* 120px grid of thin white lines used on primary backgrounds */
+@utility grid-lines {
+  background-image:
+    linear-gradient(
+      to right,
+      color-mix(in srgb, var(--color-white) 12%, transparent) 2px,
+      transparent 2px
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--color-white) 12%, transparent) 2px,
+      transparent 2px
+    );
+  background-size: 120px 120px;
+  background-position: calc(50% + 59px) -1px;
 }
