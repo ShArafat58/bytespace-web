@@ -48,6 +48,7 @@ export function GrowthRow() {
             alt="Student wearing headphones and holding a laptop"
             width={703}
             height={688}
+            sizes="(min-width: 768px) 703px, (min-width: 640px) 633px, 352px"
             className="pointer-events-none absolute -left-5.25 top-2.25 max-w-none select-none"
           />
           <LearningProgressCard className="absolute left-86.25 top-53.25" />

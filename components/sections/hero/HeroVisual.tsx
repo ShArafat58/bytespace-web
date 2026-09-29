@@ -23,6 +23,7 @@ export function HeroVisual() {
           height={515}
           loading="eager"
           fetchPriority="high"
+          sizes="(min-width: 1024px) 722px, (min-width: 768px) 607px, (min-width: 640px) 520px, 304px"
           className="pointer-events-none absolute left-20.5 top-0 max-w-none select-none"
         />
         <div aria-hidden="true">

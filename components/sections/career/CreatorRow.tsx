@@ -28,6 +28,7 @@ export function CreatorRow() {
             alt="Smiling creator wearing headphones and holding a tablet"
             width={579}
             height={719}
+            sizes="(min-width: 768px) 579px, (min-width: 640px) 522px, 319px"
             className="pointer-events-none absolute -top-0.75 left-1.75 max-w-none select-none"
           />
           <HappyStudentsCard className="absolute left-70.75 top-103.25" />
