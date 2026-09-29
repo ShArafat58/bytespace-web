@@ -6,9 +6,9 @@ import { courses } from "@/lib/data/courses";
 const [, digitalAssetCourse, bigDataCourse] = courses;
 
 // Decorative collage; positions follow the 1440px design frame
-export function AuthIllustration() {
+export function AuthIllustration({ className }: { className?: string }) {
   return (
-    <div aria-hidden="true">
+    <div aria-hidden="true" className={className}>
       <CourseCard
         course={digitalAssetCourse}
         highlighted

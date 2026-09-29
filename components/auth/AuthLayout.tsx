@@ -19,27 +19,29 @@ export function AuthLayout({
 }: AuthLayoutProps) {
   return (
     <main className="relative min-h-screen overflow-hidden bg-primary-800 grid-lines">
-      <div className="relative mx-auto h-256 max-w-360">
-        <header className="absolute left-30.5 top-8.75">
+      {/* Single column below xl, exact 1440 design from xl up */}
+      <div className="relative mx-auto flex max-w-144.75 flex-col gap-8 px-5 pb-12 pt-8 md:gap-10 md:pb-16 xl:block xl:h-256 xl:max-w-360 xl:p-0">
+        <header className="xl:absolute xl:left-30.5 xl:top-8.75">
           <Link
             href="/"
             aria-label="ByteSpace home"
-            className="block rounded-sm focus-ring-inverse"
+            className="inline-block rounded-sm focus-ring-inverse"
           >
             <LogoMark aria-hidden="true" />
           </Link>
         </header>
 
-        <div className="absolute left-30.5 top-30 flex w-118.75 flex-col gap-4 text-neutral-50">
+        <div className="flex flex-col gap-4 text-neutral-50 xl:absolute xl:left-30.5 xl:top-30 xl:w-118.75">
           <p className="font-heading text-heading-xs">{title}</p>
-          <p className="text-body-l">{description}</p>
+          <p className="text-body-m md:text-body-l">{description}</p>
         </div>
 
-        <AuthIllustration />
+        <AuthIllustration className="hidden xl:block" />
 
         <div
           className={cn(
-            "absolute left-185.25 top-30 flex min-h-196 w-144.75 flex-col justify-between rounded-3xl bg-white px-15.75 pt-15.25",
+            "flex w-full flex-col gap-12 rounded-3xl bg-white px-6 pt-8 md:px-15.75 md:pt-15.25",
+            "xl:absolute xl:left-185.25 xl:top-30 xl:min-h-196 xl:w-144.75 xl:justify-between xl:gap-0",
             cardClassName,
           )}
         >

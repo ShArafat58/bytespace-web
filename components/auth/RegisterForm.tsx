@@ -41,7 +41,7 @@ export function RegisterForm() {
       <div className="flex flex-col gap-10">
         <div>
           <p className="text-body-l text-primary-800">Create an Account</p>
-          <h1 className="font-heading text-heading-m text-neutral-950">
+          <h1 className="font-heading text-heading-s text-neutral-950 md:text-heading-m">
             Welcome to ByteSpace
           </h1>
         </div>
@@ -101,7 +101,7 @@ export function RegisterForm() {
         </form>
       </div>
 
-      <p className="pb-12.75 text-center text-body-m text-neutral-700">
+      <p className="pb-8 text-center text-body-m text-neutral-700 md:pb-12.75">
         Already have an account?{" "}
         <Link
           href="/login"

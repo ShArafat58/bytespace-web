@@ -49,7 +49,7 @@ export function LoginForm() {
       <div className="flex flex-col gap-10">
         <div>
           <p className="text-body-l text-primary-800">Sign In</p>
-          <h1 className="font-heading text-heading-m text-neutral-950">
+          <h1 className="font-heading text-heading-s text-neutral-950 md:text-heading-m">
             Welcome Back
           </h1>
         </div>
@@ -117,7 +117,7 @@ export function LoginForm() {
         </div>
       </div>
 
-      <p className="pb-10 text-center text-body-m text-black-400">
+      <p className="pb-8 text-center text-body-m text-black-400 md:pb-10">
         New user?{" "}
         <Link
           href="/signup"
