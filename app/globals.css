@@ -99,6 +99,19 @@
   --text-stat--font-weight: 600;
   --text-stat--letter-spacing: -0.01em;
 
+  /* Extra text styles used in the growth and creator section (not in the style guide) */
+  --text-display-xs: 2.25rem;
+  --text-display-xs--line-height: 2.75rem;
+  --text-display-xs--font-weight: 500;
+  --text-display-xs--letter-spacing: -0.01em;
+  --text-amount: 1.5rem;
+  --text-amount--line-height: 2rem;
+  --text-amount--font-weight: 600;
+  --text-amount--letter-spacing: -0.01em;
+  --text-caption: 0.625rem;
+  --text-caption--line-height: 1.2;
+  --text-caption--font-weight: 400;
+
   /* 1440 frame with 120px margins leaves a 1200px content area */
   --container-content: 75rem;
 }

@@ -25,6 +25,7 @@ type AvatarGroupProps = {
   avatars: Avatar[];
   extraLabel: string;
   size?: keyof typeof sizes;
+  badgeClassName?: string;
   className?: string;
 };
 
@@ -33,6 +34,7 @@ export function AvatarGroup({
   extraLabel,
   size = "md",
   className,
+  badgeClassName,
 }: AvatarGroupProps) {
   const config = sizes[size];
 
@@ -53,6 +55,7 @@ export function AvatarGroup({
           "relative flex items-center justify-center rounded-full bg-secondary-400 text-neutral-950",
           config.item,
           config.label,
+          badgeClassName,
         )}
       >
         {extraLabel}

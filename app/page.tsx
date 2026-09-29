@@ -1,3 +1,4 @@
+import { CareerAndCreator } from "@/components/sections/CareerAndCreator";
 import { DiscoverCourses } from "@/components/sections/discover/DiscoverCourses";
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
@@ -13,6 +14,7 @@ export default function HomePage() {
         <PartnerLogos />
         <DiscoverCourses />
         <LearningPaths />
+        <CareerAndCreator />
       </main>
     </>
   );

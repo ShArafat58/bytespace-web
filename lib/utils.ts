@@ -16,6 +16,9 @@ const textStyles = [
   "label-s",
   "label-xs",
   "stat",
+  "display-xs",
+  "amount",
+  "caption",
 ];
 
 // Teach tailwind-merge that custom text styles are font sizes, not colors

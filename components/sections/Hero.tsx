@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { CategoryHighlightCard } from "@/components/sections/hero/CategoryHighlightCard";
-import { HappyStudentsCard } from "@/components/sections/hero/HappyStudentsCard";
+import { HappyStudentsCard } from "@/components/ui/HappyStudentsCard";
 import { HeroSearch } from "@/components/sections/hero/HeroSearch";
-import { LearningProgressCard } from "@/components/sections/hero/LearningProgressCard";
+import { LearningProgressCard } from "@/components/ui/LearningProgressCard";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
 

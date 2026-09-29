@@ -8,10 +8,15 @@ import { cn } from "@/lib/utils";
 
 type CourseCardProps = {
   course: Course;
+  highlighted?: boolean;
   className?: string;
 };
 
-export function CourseCard({ course, className }: CourseCardProps) {
+export function CourseCard({
+  course,
+  highlighted = false,
+  className,
+}: CourseCardProps) {
   const stats = [course.lessons, course.duration, course.comments];
 
   return (
@@ -64,6 +69,9 @@ export function CourseCard({ course, className }: CourseCardProps) {
               avatars={courseAvatars}
               extraLabel={course.enrolledLabel}
               size="sm"
+              badgeClassName={
+                highlighted ? "bg-black-950 text-white" : undefined
+              }
             />
           </div>
 
@@ -78,7 +86,10 @@ export function CourseCard({ course, className }: CourseCardProps) {
         <p className="flex shrink-0 items-center text-body-l text-black-700">
           <span className="sr-only">Rating:</span>
           {course.rating}
-          <StarRoundedIcon aria-hidden="true" className="text-neutral-200" />
+          <StarRoundedIcon
+            aria-hidden="true"
+            className={highlighted ? "text-secondary-400" : "text-neutral-200"}
+          />
         </p>
       </div>
     </article>
